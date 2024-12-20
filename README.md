@@ -128,10 +128,16 @@ The demo programms demonstrate the following functions of lvgl on CYD(2):
 
 ## LVGL Tips
 
-### Font Converter
+### Font Converter for custom fonts
 
+The prebuild firmwares only contain the `lv.font_montserrat_14` and `lv.font_montserrat_16` fonts.
 Use the [font converter](https://lvgl.io/tools/fontconverter) to compile custom fonts for LVGL. 
 The image shows the settings used to compile fonts and load them in the demo script (click to enlarge).
+
+
+I have tested several fonts and [Lexend](https://fonts.google.com/specimen/Lexend) is one of my favourites.
+It's clearly readable on the CYD with medium or semi-bold font-weight.
+It's provided under the Open Font License.
 
 
 <img src="doc/Font_Converter_Settings.jpg" width="250" height="auto" />

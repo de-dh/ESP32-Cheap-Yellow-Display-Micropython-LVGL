@@ -158,6 +158,8 @@ During display initialization in pure Micropython, bgr-mode needs to be disabled
 Display(self.spi_display, dc=Pin(2), cs=Pin(15), rst=Pin(15), width = 320, height = 240, bgr = False)
 ```
 
+Another solution can be disbling gamma-correction by passing `gamma = False` during Display initialization (see [#2](https://github.com/de-dh/ESP32-Cheap-Yellow-Display-Micropython-LVGL/issues/2#issuecomment-2558521839) )
+
 ### Demo Programm
 
 A working demo and the drivers can be found in the `/demo_no_lvgl` folder. 

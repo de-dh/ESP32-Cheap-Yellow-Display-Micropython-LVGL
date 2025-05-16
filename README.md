@@ -67,7 +67,9 @@ Here are direct download links from Stefan's Blog for non-german users (use one 
 - [Esp32WROOM](https://stefan.box2code.de/wp-content/uploads/2023/11/lv_micropython-WROOM.zip) 
 - [Esp32WROOM + espnow](https://stefan.box2code.de/wp-content/uploads/2024/04/lv_micropython-WROOM_EspNow.zip)
 - [Esp32WROOM + async espnow](https://stefan.box2code.de/wp-content/uploads/2024/04/lv_micropython-WROOM_AOIEspNow.zip)
-- [Esp32WROVER](https://stefan.box2code.de/huge_files/lv_micropython-WROVER.zip)
+- [Esp32WROVER](https://stefan.box2code.de/huge_files/lv_micropython-WROVER.zip) *
+
+*: Can be used to connect an ESP32-WROVER (more PSRAM) to a ILI9341 + xpt2046 Touchscreen. Also useful when [adding PSRAM to the CYD](https://github.com/hexeguitar/ESP32_TFT_PIO).
 
 The .zip archives already contain a `flash.sh` file for flashing with esptool.py under unix (i guess).
 You might need to change `python` to `python3` and `-p /dev/ttyUSB0` to `--port COMXX` (XX = your COM address) if you use esptool.py with windows command line.
@@ -127,6 +129,10 @@ The demo programms demonstrate the following functions of lvgl on CYD(2):
 - advanced demo with multiple screens, a chart with data imported from a .csv file and asyncio usage
 
 ## LVGL Tips
+
+### Examples from the LVGL 8.3 Documentation
+
+The [Documentation for LVGL 8.3](https://docs.lvgl.io/8.3/examples.html) contains Micropython examples for most widgets which are missing in other versions of the documentation.
 
 ### Font Converter for custom fonts
 

@@ -35,7 +35,7 @@ The demo programms demonstrate the following functions of lvgl on CYD(2):
 - advanced demo with multiple screens, a chart with data imported from a .csv file and asyncio usage
 
 [Two similar versions of CYD are available](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/cyd.md). 
-The first version has one USB port (i call this "CYD") and the second version features two USB ports (i call this "CYD-2"). 
+The first version has one USB port (i call this "CYD") and the second version features two USB ports (i call this "CYD2"). 
 Although the remaining components are identical, there is a difference in the display drivers color management.
 
 <img src="doc/CYD_Chart.jpg" width="250" height="auto" />

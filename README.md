@@ -1,22 +1,21 @@
-> [!NOTE]
-> This repositry is meant to show you how to quickly get LVGL under Micropython on the Cheap-Yellow-Display working and save you some time and pain.
-> Everyone is welcome to contribute to this repositry and share his / her knowledge.
-
 > [!WARNING]
 > All demo programs were tested with the pre-built firmware linked in this repositry using **LVGL version 8.3.6.** and **Micropython version 1.19.1.**
-> The demo programs may be incompatible with other versions of LVGL / MPY.
+> The demo programs might be incompatible with other versions of LVGL / MPY.
 
 
 
 # CYD2-MPY-LVGL
 
 ## Introduction
+
+This repositry is meant to show you how to quickly set up LVGL under Micropython on the Cheap-Yellow-Display and save you some time and pain. 
+Everyone is welcome to contribute to this repositry and share his / her knowledge.
+
 <img align="right"  src="doc/CYD1.jpg" width="250" height="auto" />
 
 The [Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/tree/main) (CYD) aka ESP32-2432S028 is a low-cost device comprised of a ESP32-WROOM equipped with a
-ILI9431 2.8' Display and a xpt2046 resistive touch pad and some more peripherals. It can be found on AliExpress for 7$ - 15$ depending on the seller and available promotions.
+ILI9431 2.8' Display, a xpt2046 resistive touch pad and some more peripherals. It can be found on AliExpress for 7$ - 15$ depending on the seller and available promotions (even 0,99 € with new user discount).
 In my opinion, this combination is great for GUI development for small IOT projects.
-
 
 However, getting LVGL + MPY to work on the CYD(2) was very time-consuming and annoying. 
 This documentation might save you a lot of time which I wasted.
@@ -25,11 +24,11 @@ This documentation might save you a lot of time which I wasted.
 This setup enables the use of Thonny to create and debug programms easily.
 The CYD is ideal for small IOT projects and LVGL provides a convenient solution to create user interfaces.
 
-The demo programms demonstrate the following functions of lvgl on CYD(2):
+The demo programms demonstrate the following functions of LVGL on the CYD(2):
 
 - simple demo with buttons and callback functions
 - using CYD2 in portrait mode
-- loading a png image
+- loading a png image (without the image converter)
 - loading a custom text font
 - loading a custom icon font
 - advanced demo with multiple screens, a chart with data imported from a .csv file and asyncio usage
@@ -172,3 +171,21 @@ A working demo and the drivers can be found in the `/demo_no_lvgl` folder.
 Draw functions can be used and touch actions can be assigned to multiple areas on screen in the demo programm.
 
 <img src="doc/CYD_MPY_Only.jpg" width="300" height="auto" />
+
+
+## Links
+
+CYD links:
+
+- [Micropython example for the CYD](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/Examples/Micropython/Micropython.md): Large repositry about the CYD mainly with `C` examples.
+- [Modifiying the CYD's hardware](https://github.com/hexeguitar/ESP32_TFT_PIO): Adding PSRAM, freeing GPIO pins, attaching a speaker.
+- [Overview of the different CYD versions](https://github.com/rzeldent/platformio-espressif32-sunton): Overview of different CYD boards and board definitions for PlatformIO.
+
+LVGL links:
+
+- [LVGL](https://github.com/rzeldent/platformio-espressif32-sunton): LVGL main repositry.
+- [LVGL Forum](https://forum.lvgl.io/): You can find help at the LVGL forum. Has a micropython category.
+- [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython): Micropython bindings from kdschlosser make building the firmware easier and support additional displays.
+- [Stefan's Blog](https://stefan.box2code.de/2023/11/18/esp32-grafik-mit-lvgl-und-micropython/): German blog with instructions on how to use LVGL on the CYD. Also contains prebuild firmware for LVGL 8.3.
+- [Documentation for LVGL 8.3](https://docs.lvgl.io/8.3/examples.html): Documentation for LVGL 8.3 with Micropython examples.
+- [LVGL Font Converter](https://lvgl.io/tools/fontconverter): Online font converter for LVGL.

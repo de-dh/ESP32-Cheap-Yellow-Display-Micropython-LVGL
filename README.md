@@ -8,19 +8,19 @@
 
 ## Introduction
 
-This repositry is meant to show you how to quickly set up LVGL under Micropython on the Cheap-Yellow-Display and save you some time and pain. 
+This repositry is meant to show you how to quickly set up [LVGL](https://github.com/rzeldent/platformio-espressif32-sunton) under [Micropython](https://github.com/micropython/micropython) on the [Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/tree/main) and save you some time and pain. 
 Everyone is welcome to contribute to this repositry and share his / her knowledge.
 
 <img align="right"  src="doc/CYD1.jpg" width="250" height="auto" />
 
-The [Cheap Yellow Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/tree/main) (CYD) aka ESP32-2432S028 is a low-cost device comprised of a ESP32-WROOM equipped with a
+The Cheap Yellow Display (CYD) aka ESP32-2432S028 is a low-cost device comprised of a ESP32-WROOM equipped with a
 ILI9431 2.8' Display, a xpt2046 resistive touch pad and some more peripherals. It can be found on AliExpress for 7$ - 15$ depending on the seller and available promotions (even 0,99 € with new user discount).
 In my opinion, this combination is great for GUI development for small IOT projects.
 
 However, getting LVGL + MPY to work on the CYD(2) was very time-consuming and annoying. 
 This documentation might save you a lot of time which I wasted.
 
-**This repository is about running LVGL under Miropython firmware on the cheap yellow display.** 
+This repository is about running LVGL under Miropython firmware on the cheap yellow display.
 This setup enables the use of Thonny to create and debug programms easily.
 The CYD is ideal for small IOT projects and LVGL provides a convenient solution to create user interfaces.
 
@@ -181,9 +181,10 @@ CYD links:
 - [Modifiying the CYD's hardware](https://github.com/hexeguitar/ESP32_TFT_PIO): Adding PSRAM, freeing GPIO pins, attaching a speaker.
 - [Overview of the different CYD versions](https://github.com/rzeldent/platformio-espressif32-sunton): Overview of different CYD boards and board definitions for PlatformIO.
 
-LVGL links:
+LVGL / Micropython links:
 
 - [LVGL](https://github.com/rzeldent/platformio-espressif32-sunton): LVGL main repositry.
+- [Micropython](https://github.com/micropython/micropython): Micropython main repositry.
 - [LVGL Forum](https://forum.lvgl.io/): You can find help at the LVGL forum. Has a micropython category.
 - [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython): Micropython bindings from kdschlosser make building the firmware easier and support additional displays.
 - [Stefan's Blog](https://stefan.box2code.de/2023/11/18/esp32-grafik-mit-lvgl-und-micropython/): German blog with instructions on how to use LVGL on the CYD. Also contains prebuild firmware for LVGL 8.3.

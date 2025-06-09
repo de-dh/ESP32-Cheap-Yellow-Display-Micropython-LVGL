@@ -1,6 +1,9 @@
 > [!WARNING]
-> All demo programs were tested with the pre-built firmware linked in this repositry using **LVGL version 8.3.6.** and **Micropython version 1.19.1.**
-> The demo programs might be incompatible with other versions of LVGL / MPY.
+> All demo programs in the `demo_lvgl` were tested with the pre-built firmware linked in this repositry using **LVGL version 8.3.6.** and **Micropython version 1.19.1.**
+> The demo programs are incompatible with the LVGL9 firmware.
+>
+> The `lvgl9_firmware` folder contains a prebuilt firmware (with flash instructions and a test program) using LVGL 9.2.2 and MicroPython 1.25.0 compiled from [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for the CYD.
+> I will reorganize this repo and add more documentation shortly.
 
 
 

@@ -4,8 +4,8 @@ The old [LVGL8 documentation and examples](LVGL8.md) can be found here.
 It is not maintaines and the programms are incompatible with LVGL9.
 
 ## LVGL9 Firmware
-The `lvgl9_firmware` folder contains a prebuilt firmware (with flash instructions and a test program) using LVGL 9.3 and MicroPython 1.25.0 compiled from [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for the Cheap-Yellow-Display. It was compiled from commit 
-kdschlosser/lvgl_micropython@15a414bc03486017235234882ce7415532c6325e since the current version has a bug which puts the CYD in a boot loop. The firmware includes the touch fix kdschlosser/lvgl_micropython#454 .
+The `lvgl9_firmware` folder contains a prebuilt firmware (with flash instructions and a test program) using LVGL 9.3 and MicroPython 1.25.0 compiled from [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for the Cheap Yellow Display (CYD). It was compiled from commit 
+[15a414b](https://github.com/lvgl-micropython/lvgl_micropython/commit/15a414bc03486017235234882ce7415532c6325e) since the current version has a bug which puts the CYD in a boot loop. The firmware includes the touch fix kdschlosser/lvgl_micropython#454 for correct touch calibration.
 
 
 ## LVGL Tips

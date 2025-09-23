@@ -1,5 +1,7 @@
 > [!WARNING]
-> This document is not maintained. The LVGL8 examples won't work with LVGL9.
+> This document is not maintained.
+> All demo programs in the `demo_lvgl` were tested with the pre-built firmware linked in this repositry using **LVGL version 8.3.6.** and **Micropython version 1.19.1.**
+> The demo programs are incompatible with the LVGL9 firmware.
 
 # CYD2-MPY-LVGL
 

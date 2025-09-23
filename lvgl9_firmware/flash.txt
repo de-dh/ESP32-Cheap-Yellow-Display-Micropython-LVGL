@@ -1,1 +1,0 @@
-python -m esptool --chip esp32 --port COM9 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 4MB --flash_freq 40m --erase-all 0x0 lvgl_micropy_ESP32_GENERIC-4.bin

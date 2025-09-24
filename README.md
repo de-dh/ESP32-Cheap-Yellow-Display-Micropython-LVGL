@@ -65,7 +65,10 @@ lv.font_montserrat_10, lv.font_montserrat_12, lv.font_montserrat_14, lv.font_mon
 
 Although the different versions of CYDs all look alike, they require varying parameters for display and touchscreen initialization.
 The file `/lvgl9_firmware/color_test.py` can be used to find the correct display driver's rotation and color settings.
+The figure below shows how the program should be displayed (the colors are more intense in reality).
 All neccessary settings can be customized at the top of the file. 
+
+<img align="right"  src="doc/color_test_correct.jpg" width="250" height="auto" />
 
 ```python
 # ============== Customize settings ============== #
@@ -131,6 +134,7 @@ Most examples can be used with LVGL9 with small modifications.
 
 ### LVGL9 Commands
 
+Some commands changed during the upgrade from LVGL8 to LVGL9. E. g., `lv.btn()` becomes `lv.button()`.
 The `dir()` method can be used to inspect the attributes of the `lv` class, `lv.obj` class, widget classes etc. to find correct commands.
 To inspect the `lv.obj` class and print it's attributes to the shell, the following command can be used:
 

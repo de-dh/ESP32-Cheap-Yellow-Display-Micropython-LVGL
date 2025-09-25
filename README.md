@@ -11,6 +11,9 @@ The family of Esp32-S2432028Rs or  Cheap Yellow Displays (CYDs) comprises of var
 
 This makes the CYDs ideal candidates for the development of small GUI projects using LVGL and MicroPython.
 
+An integrated Esp32S3 display module with more power is the [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main).
+It has onboard PSRAM which supports more complex LVGL programs.
+
 
 <img align="right"  src="doc/CYD1.jpg" width="250" height="auto" />
 
@@ -228,6 +231,7 @@ CYD links:
 
 LVGL / Micropython links:
 
+- [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main)
 - [LVGL](https://github.com/rzeldent/platformio-espressif32-sunton): LVGL main repositry.
 - [Micropython](https://github.com/micropython/micropython): Micropython main repositry.
 - [LVGL Forum](https://forum.lvgl.io/): You can find help at the LVGL forum. Has a micropython category.

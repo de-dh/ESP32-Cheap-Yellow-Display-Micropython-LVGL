@@ -195,6 +195,37 @@ It's clearly readable on the CYD with medium or semi-bold font-weight.
 
 <img src="doc/Font_Converter_Settings.jpg" width="250" height="auto" />
 
+### Multitasking
+
+@kdschlosser suggests that the `_thread` module should be used to achieve concurrent tasks as described in [this forum post](https://forum.lvgl.io/t/jc3248w535en-event-problem/21586/23).
+
+### Selecting all children of an object
+
+The `obj.get_child()` function returns only direct children (first level) of an object. 
+The `get_all_children(obj)` function can be used to get all children of an object.
+
+```python
+def get_all_children(parent_obj, exclude_parent = True):
+    child_list = []
+    
+    def walk(child_obj, data = None):
+        if child_obj == parent_obj and exclude_parent:
+            pass
+        else:
+            child_list.append(child_obj)
+            
+        return lv.obj.TREE_WALK.NEXT    
+        
+    parent_obj.tree_walk(walk, None)
+    
+    return child_list
+
+# Example use: Return all children of 'obj'
+_children = get_all_children(obj)
+for el in _children:
+    el.add_flag(lv.obj.FLAG.EVENT_BUBBLE)
+```
+
 
 
 ## CYD2 and MicroPython

@@ -195,6 +195,29 @@ It's clearly readable on the CYD with medium or semi-bold font-weight.
 
 <img src="doc/Font_Converter_Settings.jpg" width="250" height="auto" />
 
+### Icon fonts
+
+The `utf8Bytes` function is useful for displaying icons from icon fonts.
+It converts the character specific Unicode which is used on font collection websites to a six digit UTF-8 code [required by LVGL](https://docs.lvgl.io/8.3/overview/font.html#add-new-symbols).
+
+```python
+def utf8Bytes(hexStr: str):
+        ''' Helper function used to display icons.
+        Returns the six digit utf8 bytecode from four digit Unicode
+        as shown on font collection websites (e.g. font awesome, fontello)
+        for direct use in lvgl.
+        'F287' -> b'\0xEF\0x8A\0x87'
+        
+        Use:
+        obj.set_style_text_font(icon_font, 0)
+        obj.set_text(utf8Bytes('F287'))'''
+    
+        hexCode = int(hexStr, 16)
+        unicodeStr= chr(hexCode)
+        utf8Bytecode = unicodeStr.encode('utf-8')
+        return utf8Bytecode
+```
+
 ### Multitasking
 
 @kdschlosser suggests that the `_thread` module should be used to achieve concurrent tasks as described in [this forum post](https://forum.lvgl.io/t/jc3248w535en-event-problem/21586/23).

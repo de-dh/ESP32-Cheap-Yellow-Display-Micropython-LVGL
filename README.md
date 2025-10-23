@@ -169,6 +169,9 @@ The list can be copied to a text program and commands can be found using search 
 ```
 </details>
 
+### Loading images
+
+Png images can be loaded directly as shown [here](https://github.com/lvgl-micropython/lvgl_micropython/discussions/317#discussioncomment-13230539).
 
 ### Font Converter for custom fonts
 

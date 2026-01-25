@@ -1,3 +1,10 @@
+> [!IMPORTANT]
+> You must do hard-resets of your CYD after code changes. Soft resets may throw this error: `can't convert to module to int`.
+>
+> **>>>>> Please read the whole readme file before asking for help / opening any issues. <<<<<**
+
+
+
 ## Cheap Yellow Display and LVGL
 
 The family of Esp32-S2432028Rs or  Cheap Yellow Displays (CYDs) comprises of various boards with similar hardware configuration including

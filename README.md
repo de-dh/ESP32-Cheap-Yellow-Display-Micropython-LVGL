@@ -176,7 +176,7 @@ The list can be copied to a text program and commands can be found using search 
 ```
 </details>
 
-### Loading images
+### Loading Images
 
 Png images can be loaded directly as shown [here](https://github.com/lvgl-micropython/lvgl_micropython/discussions/317#discussioncomment-13230539).
 
@@ -295,11 +295,11 @@ CYD links:
 
 LVGL / Micropython links:
 
+- [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython): Micropython bindings from kdschlosser make building the firmware easier and support additional displays.
+- [baxterbuilds](https://baxterbuilds.com/): Some very useful LVGL9 Micropython examples.
 - [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main)
-- [LVGL](https://github.com/rzeldent/platformio-espressif32-sunton): LVGL main repositry.
 - [Micropython](https://github.com/micropython/micropython): Micropython main repositry.
 - [LVGL Forum](https://forum.lvgl.io/): You can find help at the LVGL forum. Has a micropython category.
-- [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython): Micropython bindings from kdschlosser make building the firmware easier and support additional displays.
-- [Stefan's Blog](https://stefan.box2code.de/2023/11/18/esp32-grafik-mit-lvgl-und-micropython/): German blog with instructions on how to use LVGL on the CYD. Also contains prebuild firmware for LVGL 8.3.
+- [Stefan's Blog (LVGL8!)](https://stefan.box2code.de/2023/11/18/esp32-grafik-mit-lvgl-und-micropython/): German blog with instructions on how to use LVGL on the CYD. Also contains prebuild firmware for LVGL 8.3.
 - [Documentation for LVGL 8.3](https://docs.lvgl.io/8.3/examples.html): Documentation for LVGL 8.3 with Micropython examples.
 - [LVGL Font Converter](https://lvgl.io/tools/fontconverter): Online font converter for LVGL.

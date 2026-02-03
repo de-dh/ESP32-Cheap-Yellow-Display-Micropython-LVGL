@@ -53,7 +53,7 @@ The previous version of the precompiled firmware required a modified touch drive
 The following command is used to flash the firmware (esptool required):
 
 ```bash
-python -m esptool --chip esp32 --port COMXX -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 4MB --flash_freq 40m --erase-all 0x0 lvgl_micropython_cyd.bin
+python -m esptool --chip esp32 --port COM10 -b 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-size 4MB --flash-freq 40m --erase-all 0x0 lvgl_micropython_cyd.bin
 ```
 
 

@@ -1,9 +1,9 @@
 > [!IMPORTANT]
 > You must do hard-resets of your CYD after code changes. Soft resets may throw this error: `can't convert to module to int`.
 >
-> **>>>>> Please read the whole readme file before asking for help / opening any issues. <<<<<**
-
-
+> The demos / example programs from the different folders require different firmwares. They may not be mixed up.
+> 
+> **>>>>> Please read the whole readme file and check the closed issues before asking for help / opening any issues. <<<<<**
 
 ## Cheap Yellow Display and LVGL
 
@@ -30,10 +30,25 @@ LVGL enables the development of professionally looking GUIs which accept user in
 
 The major drawback of LVGL is that it requires a custom MPY firmware build and setting up the cofiguration for a specific touch / display combination can be tricky. [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for MPY aims to make the compilation of the firmware as easy as possible. I used this binding to compile the firmware for the CYD which is provided for download in this repositry.
 
+
+## Which Firmware to Chose
+
+The following table illustrates which firmware has to be installed on the CYD in order to run the programs / demo scripts from the different folders.
+
+| Folder | Required Firmware | Notes |
+| --- | --- | --- |
+| `/lvgl9_firmware` | [LVGL9 Firmware](https://github.com/de-dh/ESP32-Cheap-Yellow-Display-Micropython-LVGL/blob/main/lvgl9_firmware/lvgl_micropython_cyd.bin) | Contains only `touch_color_test.py` as an example to run with the LVGL9 firmware. This firmware is compiled from [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) and not from the official LVGL-MPY bindings since those are [currently incompatible with Esp32 modules](https://github.com/lvgl/lv_binding_micropython/issues/372). |
+| `/demo_lvgl8_only` \*| [LVGL8 Firmwares](https://github.com/de-dh/ESP32-Cheap-Yellow-Display-Micropython-LVGL/blob/main/LVGL8.md#drivers-and-firmware)  | Contains a few examples **for LVGL8 only** and links to precompiled firmware builds from a german blog. The example programs are incompatible with the LVGL9 firmware and this folder is not maintained. The author compiled this firmware from the official LVGL-MPY bindings.|
+| `/demo_no_lvgl` | [Standard MPY Firmware](https://github.com/micropython/micropython) | Illustrates some simple drawing on the display / Using the touch functionality with MPY-only drivers. |
+
+\*: This folder was previously named `/demo_lvgl`.
+
+
 ## LVGL8 - Deprecated Documentation and Examples
 
 The old [LVGL8 documentation and examples](LVGL8.md) can be found here.
 It is not maintained and the programs are incompatible with LVGL9.
+
 
 ## LVGL9
 

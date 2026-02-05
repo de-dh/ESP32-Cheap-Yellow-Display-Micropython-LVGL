@@ -1,7 +1,7 @@
 > [!WARNING]
 > This document is not maintained.
-> All demo programs in the `demo_lvgl` were tested with the pre-built firmware linked in this repositry using **LVGL version 8.3.6.** and **Micropython version 1.19.1.**
-> The demo programs are incompatible with the LVGL9 firmware.
+> All demo programs in the `demo_lvgl8_only` were tested with the pre-built firmware linked in this file using **LVGL version 8.3.6.** and **Micropython version 1.19.1.**
+> The demo programs are incompatible with the LVGL9 firmware. This file and the LVGL8 programs are not maintained. 
 
 # CYD2-MPY-LVGL
 
@@ -35,7 +35,7 @@ Although the remaining components are identical, there is a difference in the di
 > - Download the LVGL-MPY firmware from the link below and flash it to your CYD using esptool.py.
 > - Upload the complete content of the `/demo-lvgl` folder to your CYD's root (not the folder itself).
 > - Run demo programm (which most likely looks wrong at this point).
-> - Open `demo_lvgl/lib/display_driver.py` and adjust display color mode and rotation settings (you have to test the different settings until you find the correct ones).
+> - Open `demo_lvgl8_only/lib/display_driver.py` and adjust display color mode and rotation settings (you have to test the different settings until you find the correct ones).
 
 
 ### Drivers and Firmware
@@ -73,7 +73,7 @@ Although my CYD2's look all the same, some require adjustments for the initializ
 Some of my boards only needed the colormode to be changed, other also required different rotation settings.
 You just have to figure it out by trying.
 
-Open `demo_lvgl/lib/display_driver.py` and look for the display initialization command:
+Open `demo_lvgl8_only/lib/display_driver.py` and look for the display initialization command:
 
 ```python
 disp = ili9XXX.ili9341(clk=14, cs=15, dc=2, rst=12, power=23, miso=12, mosi=13, width = 320, height = 240,

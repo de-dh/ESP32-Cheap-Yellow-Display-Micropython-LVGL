@@ -1,19 +1,23 @@
-> [!IMPORTANT]
+> [!WARNING]
 > You must do hard-resets of your CYD after code changes. Soft resets may throw this error: `can't convert to module to int`.
 >
-> The demos / example programs from the different folders require different firmwares. They may not be mixed up.
-> 
-> **>>>>> Please read the whole readme file and check the closed issues before asking for help / opening any issues. <<<<<**
+> The demos / example programs from the different folders require individual firmwares. They may not be mixed up.
+
+
+> [!IMPORTANT]
+> **>>>>> Please read the complete readme file and check the closed issues before asking for help / opening any new issues. <<<<<**
+> Everyone is welcome to contribute to this repositry and share example programs or code snippets for LVGL9 and MPY.
+
 
 ## Cheap Yellow Display and LVGL
 
-The family of Esp32-S2432028Rs or  Cheap Yellow Displays (CYDs) comprises of various boards with similar hardware configuration including
+The family of Esp32-S2432028Rs or Cheap Yellow Displays (CYDs) comprises of various boards with similar hardware configuration including
 
 - an Esp32- WROOM
 - one or two USB ports
 - an ILI9341 2.8' (320 x 240, RGB565) display
 - a xpt2046 resistive touch interface
-- sdcard adapter, I2S interface, RGB Led and a photoresistor (LDR)
+- SDCard adapter, I2S interface, RGB LED and a photoresistor (LDR)
 - some GPIO pins / I2C interface
 
 This makes the CYDs ideal candidates for the development of small GUI projects using LVGL and MicroPython.

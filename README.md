@@ -247,9 +247,9 @@ def utf8Bytes(hexStr: str):
         return utf8Bytecode
 ```
 
-### Multitasking
+### Using Asyncio
 
-@kdschlosser suggests that the `_thread` module should be used to achieve concurrent tasks as described in [this forum post](https://forum.lvgl.io/t/jc3248w535en-event-problem/21586/23).
+Described [here](https://github.com/lvgl-micropython/lvgl_micropython/discussions/384#discussioncomment-13461609) by [straga](https://github.com/straga).
 
 ### Selecting all children of an object
 

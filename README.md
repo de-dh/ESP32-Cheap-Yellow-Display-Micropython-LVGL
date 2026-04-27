@@ -23,7 +23,7 @@ This repositry documents three different approaches on how to use the CYDs Displ
 | MPY + LVGL | a | b |
 
 
-<img align="right"  src="doc/CYD1.jpg" width="250" height="auto" />
+<img align="right"  src="img/CYD_application_example.jpg" width="250" height="auto" />
 
 The focus of this repositry is the setup of LVGL. LVGL enables the development of professionally looking GUIs which accept user input with reasonable effort. LVGL offers predefined widgets like labels, buttons, lists, textareas etc. All objects are styled using css-like style properties, e. g. text-color, background-color, shadow, padding. Objects can be aligned relative to each other and complex layouts can be designed using flexbox and grid like positioning. Even animations are supported.
 
@@ -32,24 +32,6 @@ The major drawback of LVGL is that it requires a custom MPY firmware build and s
 An integrated Esp32S3 display module with more power is the [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main).
 It has onboard PSRAM which supports more complex LVGL programs.
 
-
-## Which Firmware to Chose
-
-The following table illustrates which firmware has to be installed on the CYD in order to run the programs / demo scripts from the different folders.
-
-| Folder | Required Firmware | Notes |
-| --- | --- | --- |
-| `/lvgl9_firmware` | [LVGL9 Firmware](https://github.com/de-dh/ESP32-Cheap-Yellow-Display-Micropython-LVGL/blob/main/lvgl9_firmware/lvgl_micropython_cyd.bin) | Contains only `touch_color_test.py` as an example to run with the LVGL9 firmware. This firmware is compiled from [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) and not from the official LVGL-MPY bindings since those are [currently incompatible with Esp32 modules](https://github.com/lvgl/lv_binding_micropython/issues/372). |
-| `/demo_lvgl8_only` \*| [LVGL8 Firmwares](https://github.com/de-dh/ESP32-Cheap-Yellow-Display-Micropython-LVGL/blob/main/LVGL8.md#drivers-and-firmware)  | Contains a few examples **for LVGL8 only** and links to precompiled firmware builds from a german blog. The example programs are incompatible with the LVGL9 firmware and this folder is not maintained. The author compiled this firmware from the official LVGL-MPY bindings.|
-| `/demo_no_lvgl` | [Standard MPY Firmware](https://github.com/micropython/micropython) | Illustrates some simple drawing on the display / Using the touch functionality with MPY-only drivers. |
-
-\*: This folder was previously named `/demo_lvgl`.
-
-
-## LVGL8 - Deprecated Documentation and Examples
-
-The old [LVGL8 documentation and examples](LVGL8.md) can be found here.
-It is not maintained and the programs are incompatible with LVGL9.
 
 
 ## LVGL9
@@ -95,7 +77,7 @@ The file `/lvgl9_firmware/color_test.py` can be used to find the correct display
 The figure below shows how the program should be displayed (the colors are more intense in reality).
 All neccessary settings can be customized at the top of the file. 
 
-<img align="right"  src="doc/color_test_correct.jpg" width="250" height="auto" />
+<img align="right"  src="img/screen_color_test.png" width="250" height="auto" />
 
 ```python
 # ============== Customize settings ============== #
@@ -220,7 +202,7 @@ label_large.set_style_text_font(teko_48, 0)
 I have tested several fonts and [Lexend](https://fonts.google.com/specimen/Lexend) is one of my favourites.
 It's clearly readable on the CYD with medium or semi-bold font-weight.
 
-<img src="doc/Font_Converter_Settings.jpg" width="250" height="auto" />
+<img src="img/font_converter_settings.jpg" width="250" height="auto" />
 
 ### Icon fonts
 
@@ -283,7 +265,7 @@ for el in _children:
 ### Drivers and Firmware
 
 The standard release of ESP32 MPY-Firmware can be installed on the CYD-2 as described [here](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/Examples/Micropython/Micropython.md).
-The ILI9341 driver and the xpt2046 driver can be found in the `/demo_no_lvgl` folder. 
+The ILI9341 driver and the xpt2046 driver can be found in the `/mpy_only` folder. 
 
 ### Color Mode for CYD2
 
@@ -299,7 +281,7 @@ Another solution can be disabling gamma-correction by passing `gamma = False` du
 A working demo and the drivers can be found in the `/demo_no_lvgl` folder. 
 Draw functions can be used and touch actions can be assigned to multiple areas on screen in the demo program.
 
-<img src="doc/CYD_MPY_Only.jpg" width="300" height="auto" />
+<img src="img/CYD_MPY_Only.jpg" width="300" height="auto" />
 
 
 ## Links

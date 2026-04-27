@@ -2,37 +2,35 @@
 > You must do hard-resets of your CYD after code changes. Soft resets may throw this error: `can't convert to module to int`.
 >
 > The demos / example programs from the different folders require individual firmwares. They may not be mixed up.
-
-
-> [!IMPORTANT]
+> 
 > **>>>>> Please read the complete readme file and check the closed issues before asking for help / opening any new issues. <<<<<**
-> Everyone is welcome to contribute to this repositry and share example programs or code snippets for LVGL9 and MPY.
 
 
 ## Cheap Yellow Display and LVGL
 
-The family of Esp32-S2432028Rs or Cheap Yellow Displays (CYDs) comprises of various boards with similar hardware configuration including
+The family of Esp32-S2432028Rs or Cheap Yellow Displays (CYDs) comprises of various boards with similar hardware configuration most importantly including
 
-- an Esp32- WROOM
-- one or two USB ports
-- an ILI9341 2.8' (320 x 240, RGB565) display
-- a xpt2046 resistive touch interface
-- SDCard adapter, I2S interface, RGB LED and a photoresistor (LDR)
-- some GPIO pins / I2C interface
+- an Esp32- WROOM and
+- an ILI9341 2.8' (320 x 240, RGB565) display with a xpt2046 resistive touch interface.
 
 This makes the CYDs ideal candidates for the development of small GUI projects using LVGL and MicroPython.
+This repositry documents three different approaches on how to use the CYDs Display and it's touchscreen.
 
-An integrated Esp32S3 display module with more power is the [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main).
-It has onboard PSRAM which supports more complex LVGL programs.
+| Approach | Folder | Description |
+| --- | --- | --- |
+| MPY only | a | b |
+| MPY + nanogui | a | b |
+| MPY + LVGL | a | b |
 
 
 <img align="right"  src="doc/CYD1.jpg" width="250" height="auto" />
 
-When it comes to development of GUIs which allow user Input via touch, MPY's primitive draw functions reach their limit pretty fast. It might be possible in theory to make some nice looking GUIs with MPYs primitive draw functions, but the required work would be enormous. This is where LVGL comes into play:
-
-LVGL enables the development of professionally looking GUIs which accept user input with reasonable effort. LVGL offers predefined widgets like labels, buttons, lists, textareas etc. All objects are styled using css-like style properties, e. g. text-color, background-color, shadow, padding. Objects can be aligned relative to each other and complex layouts can be designed using flexbox and grid like positioning. Even animations are supported.
+The focus of this repositry is the setup of LVGL. LVGL enables the development of professionally looking GUIs which accept user input with reasonable effort. LVGL offers predefined widgets like labels, buttons, lists, textareas etc. All objects are styled using css-like style properties, e. g. text-color, background-color, shadow, padding. Objects can be aligned relative to each other and complex layouts can be designed using flexbox and grid like positioning. Even animations are supported.
 
 The major drawback of LVGL is that it requires a custom MPY firmware build and setting up the cofiguration for a specific touch / display combination can be tricky. [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for MPY aims to make the compilation of the firmware as easy as possible. I used this binding to compile the firmware for the CYD which is provided for download in this repositry.
+
+An integrated Esp32S3 display module with more power is the [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main).
+It has onboard PSRAM which supports more complex LVGL programs.
 
 
 ## Which Firmware to Chose

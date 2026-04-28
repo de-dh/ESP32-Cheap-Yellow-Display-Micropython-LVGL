@@ -6,7 +6,7 @@
 > **>>>>> Please read the complete readme file and check the closed issues before asking for help / opening any new issues. <<<<<**
 
 
-## Cheap Yellow Display and LVGL
+## Cheap Yellow Display
 
 <img align="right"  src="img/CYD_application_example.jpg" width="250" height="auto" />
 
@@ -28,7 +28,7 @@ This repositry documents three different approaches on how to use the CYDs Displ
 
 The focus of this repositry is the setup of LVGL. LVGL enables the development of professionally looking GUIs which accept user input with reasonable effort. LVGL offers predefined widgets like labels, buttons, lists, textareas etc. All objects are styled using css-like style properties, e. g. text-color, background-color, shadow, padding. Objects can be aligned relative to each other and complex layouts can be designed using flexbox and grid like positioning. Even animations are supported.
 
-The major drawback of LVGL is that it requires a custom MPY firmware build and setting up the cofiguration for a specific touch / display combination can be tricky. [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for MPY aims to make the compilation of the firmware as easy as possible. I used this binding to compile the firmware for the CYD which is provided for download in this repositry.
+The major drawback of LVGL is that it requires a custom MPY firmware build and setting up the cofiguration for a specific touch / display combination can be tricky. [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for MPY aims to make the compilation of the firmware as easy as possible. The bindings were used to compile the firmware for the CYD which is provided for download in this repositry.
 
 An integrated Esp32S3 display module with more power is the [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main). It has onboard PSRAM which supports more complex LVGL programs.
 
@@ -36,9 +36,18 @@ An integrated Esp32S3 display module with more power is the [JC3248W535 aka Chea
 
 ## LVGL9
 
-### Precompiled Firmware
+### Installing the Precompiled Firmwares
 
-The `/lvgl9_firmwares` folder contains a prebuilt firmware for the Cheap Yellow Display (CYD) using LVGL 9.4 and MicroPython 1.27.0. 
+The `/lvgl9_firmwares` folder contains  prebuilt firmwares for the Cheap Yellow Display (CYD) using LVGL 9.4 and MicroPython 1.27.0. 
+
+| File Name  | Description |
+| ------------- | ------------- |
+| _lvgl9_3_micropython_cyd.bin_  | Previous firmware from this repositry compiled from LVGL 9.3 and MPY 1.25. |
+| _lvgl_micropy_ESP32_GENERIC-4.bin_  | Current firmware for the CYD with additional font-sizes of the default montserrat font enabled. Use this version or the _default version for the out-of-box CYD.|
+| _lvgl_micropy_ESP32_GENERIC-4_default.bin_  | Current firmware for the CYD with only three default font-sizes (12, 14, 16).  |
+| _lvgl_micropy_ESP32_GENERIC-SPIRAM-4.bin_  |  Firmware for the CYD with SPIRAM (PSRAM) Mod and various enabled font-sizes. |
+| _lvgl_micropy_ESP32_GENERIC-SPIRAM-4_default.bin_  | Firmware for the CYD with PSRAM mod and default font-sizes. |
+| _touch_color_test.py_  | This file can be used to find the correct display settings after a LVGL9 firmware was installed. See below. |
 
 
 The firmware was compiled from  [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython). All drivers for the CYD are included in the firmware, no additional drivers are needed.
@@ -46,20 +55,8 @@ The firmware was compiled from  [Kdschlosser's Micropython Bindings](https://git
 The following command is used to flash the firmware (esptool required):
 
 ```bash
-python -m esptool --chip esp32 --port COM10 -b 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-size 4MB --flash-freq 40m --erase-all 0x0 lvgl_micropython_cyd.bin
+python -m esptool --chip esp32 --port COM10 -b 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-size 4MB --flash-freq 40m --erase-all 0x0 lvgl_micropy_ESP32_GENERIC-4_default.bin
 ```
-
-
-<details>
-
-<summary>Included LVGL Fonts</summary>
-
-
-```bash
-lv.font_montserrat_10, lv.font_montserrat_12, lv.font_montserrat_14, lv.font_montserrat_16, lv.font_montserrat_24, lv.font_montserrat_32, lv.font_montserrat_40, lv.font_montserrat_48, lv.font_unscii_16, lv.font_unscii_8
-```
-
-</details>
 
 
 
@@ -67,7 +64,7 @@ lv.font_montserrat_10, lv.font_montserrat_12, lv.font_montserrat_14, lv.font_mon
 
 Although the different versions of CYDs all look alike, they require varying parameters for display and touchscreen initialization.
 The file `/lvgl9_firmwares/color_test.py` can be used to find the correct display driver's rotation and color settings.
-The figure below shows how the program should be displayed (the colors are more intense in reality).
+The figure (screenshot from the CYD) below shows how the program should be displayed.
 All neccessary settings can be customized at the top of the file. 
 
 <img align="right"  src="img/screen_color_test.png" width="250" height="auto" />
@@ -129,7 +126,7 @@ The program detects automatically if calibration data is available.
 
 
 
-## CYD2 and MicroPython
+## Micropython Only
 
 ### Drivers and Firmware
 

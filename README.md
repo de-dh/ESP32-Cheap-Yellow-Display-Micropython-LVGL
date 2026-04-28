@@ -34,7 +34,7 @@ An integrated Esp32S3 display module with more power is the [JC3248W535 aka Chea
 
 
 
-## LVGL9
+## LVGL9 Setup
 
 ### Installing the Precompiled Firmwares
 

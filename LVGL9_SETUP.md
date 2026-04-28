@@ -7,10 +7,10 @@ The `/lvgl9_firmwares` folder contains  prebuilt firmwares for the Cheap Yellow 
 | File Name  | Description |
 | ------------- | ------------- |
 | _lvgl9_3_micropython_cyd.bin_  | Previous firmware from this repositry compiled from LVGL 9.3 and MPY 1.25. |
-| _lvgl_micropy_ESP32_GENERIC-4.bin_  | Current firmware for the CYD with additional font-sizes of the default montserrat font enabled. Use this version or the _default version for the out-of-box CYD.|
+| _lvgl_micropy_ESP32_GENERIC-4.bin_  | Current firmware for the CYD with additional font-sizes of the default montserrat font enabled. Use this version or the __default_ version for the out-of-box CYD.|
 | _lvgl_micropy_ESP32_GENERIC-4_default.bin_  | Current firmware for the CYD with only three default font-sizes (12, 14, 16).  |
-| _lvgl_micropy_ESP32_GENERIC-SPIRAM-4.bin_  |  Firmware for the CYD with SPIRAM (PSRAM) Mod and various enabled font-sizes. |
-| _lvgl_micropy_ESP32_GENERIC-SPIRAM-4_default.bin_  | Firmware for the CYD with PSRAM mod and default font-sizes. |
+| _lvgl_micropy_ESP32_GENERIC-SPIRAM-4.bin_  |  Firmware for the CYD with [SPIRAM (PSRAM) Mod](https://github.com/hexeguitar/ESP32_TFT_PIO#adding-psram) and various enabled font-sizes. |
+| _lvgl_micropy_ESP32_GENERIC-SPIRAM-4_default.bin_  | Firmware for the CYD with [SPIRAM (PSRAM) Mod](https://github.com/hexeguitar/ESP32_TFT_PIO#adding-psram) and default font-sizes. |
 | _touch_color_test.py_  | This file can be used to find the correct display settings after a LVGL9 firmware was installed. See below. |
 
 

@@ -88,6 +88,6 @@ The program detects automatically if calibration data is available.
 
 ## Using the Example Programs
 
-Open the file `lvgl9_examples/lib/lv_config.py` and copy the correct display settings from `/lvgl9_firmwares/color_test.py` to it.
-Upload the `lvgl9_examples` folder to your board and run the example programms. 
-You don't need to upload the `lvgl9_examples/example_screenshots` folder since the screenshots are only used in the documentation.
+Open the file `/lvgl9_examples/lib/lv_config.py` and copy the correct display settings from `/lvgl9_firmwares/color_test.py` to it.
+Upload the `/lvgl9_examples` folder to your board and run the example programms. 
+You don't need to upload the `/lvgl9_examples/example_screenshots` folder since the screenshots are only used in the documentation.

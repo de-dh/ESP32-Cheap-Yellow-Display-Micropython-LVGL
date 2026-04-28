@@ -20,10 +20,10 @@ This repositry documents three different approaches on how to use the CYDs Displ
 
 | Approach | Folder | Firmware | Usecase | Description |
 | :---: | :---: | :---: | :---: | --- |
-| MPY only | [`/mpy_only`](/mpy_only) | Standard MPY Firmware | Very Limited | **Low-level touch** support.<br> Uses rdaggers ILI9431 driver. Only primitive draw functions from MPY's framebuffer module and the display driver available.  |
-| MPY + nanogui | [`/mpy_nanogui`](/mpy_nanogui) | Standard MPY Firmware | Simple UI / Data Display | **No touch** support.<br> Supports the creation and updates of simple widgets like Labels and simple diagrams. Custom fonts and mono images can be used easily. Good choice for simple UIs (e. g. displaying data) without touch input. |
-| MPY + LVGL | [`/lvgl9_firmwares`](/lvgl9_firmwares) | Precompiled LVGL Firmware | Professional GUIs / User Interactions | **High-level touch** support.<br> Supports professionally looking GUIs with touch user input.<br> _Versions: LVGL 9.4 and Micropython 1.27.0._ |
-| - | [`/lvgl9_examples`](/lvgl9_examples) | LVGL Examples | LVGL Examples | Demonstrates various widgets and functionalities of LVGL9 on the CYD.|
+| [MPY Only](MPY_ONLY.md) | [`/mpy_only`](/mpy_only) | Standard MPY Firmware | Very Limited | **Low-level touch** support.<br> Uses rdaggers ILI9431 driver. Only primitive draw functions from MPY's framebuffer module and the display driver available.  |
+| [MPY + nanogui](MPY_NANOGUI.md) | [`/mpy_nanogui`](/mpy_nanogui) | Standard MPY Firmware | Simple UI / Data Display | **No touch** support.<br> Supports the creation and updates of simple widgets like Labels and simple diagrams. Custom fonts and mono images can be used easily. Good choice for simple UIs (e. g. displaying data) without touch input. |
+| [MPY + LVGL9](LVGL9_SETUP.md) | [`/lvgl9_firmwares`](/lvgl9_firmwares) | Precompiled LVGL9 Firmware | Professional GUIs / User Interactions | **High-level touch** support.<br> Supports professionally looking GUIs with touch user input.<br> _Versions: LVGL 9.4 and Micropython 1.27.0._ |
+| [MPY + LVGL9](LVGL9_SETUP.md) | [`/lvgl9_examples`](/lvgl9_examples) | LVGL9 Examples | LVGL9 Examples | Demonstrates various widgets and functionalities of LVGL9 on the CYD.|
 
 
 The focus of this repositry is the setup of LVGL. LVGL enables the development of professionally looking GUIs which accept user input with reasonable effort. LVGL offers predefined widgets like labels, buttons, lists, textareas etc. All objects are styled using css-like style properties, e. g. text-color, background-color, shadow, padding. Objects can be aligned relative to each other and complex layouts can be designed using flexbox and grid like positioning. Even animations are supported.
@@ -31,6 +31,14 @@ The focus of this repositry is the setup of LVGL. LVGL enables the development o
 The major drawback of LVGL is that it requires a custom MPY firmware build and setting up the cofiguration for a specific touch / display combination can be tricky. [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython) for MPY aims to make the compilation of the firmware as easy as possible. The bindings were used to compile the firmware for the CYD which is provided for download in this repositry.
 
 An integrated Esp32S3 display module with more power is the [JC3248W535 aka Cheap Black Display (CBD)](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main). It has onboard PSRAM which supports more complex LVGL programs.
+
+## CYD Setup
+
+The following links provide detailed instructions on how to setup the CYD.
+
+- [LVGL9 Setup Instructions](LVGL9_SETUP.md)
+- [MPY Nanogui Setup Inctructions](MPY_NANOGUI.md)
+- [MPY Only Setup Inctructions](MPY_ONLY.md)
 
 
 ## Links

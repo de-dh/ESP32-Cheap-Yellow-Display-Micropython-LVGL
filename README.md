@@ -47,13 +47,20 @@ Everyone is welcome to share example programs and tips.
 
 ## Links
 
-CYD links:
+CYD Links:
 
 - [Micropython example for the CYD](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/Examples/Micropython/Micropython.md): Large repositry about the CYD mainly with `C` examples.
 - [Modifiying the CYD's hardware](https://github.com/hexeguitar/ESP32_TFT_PIO): Adding PSRAM, freeing GPIO pins, attaching a speaker.
 - [Overview of the different CYD versions](https://github.com/rzeldent/platformio-espressif32-sunton): Overview of different CYD boards and board definitions for PlatformIO.
 
-LVGL / Micropython links:
+
+Nanogui Links:
+
+- [Nanogui](https://github.com/peterhinch/micropython-nano-gui) - Peter Hinch's nanogui.
+- [WeAct-2.9-EPD-Esp32-MPY](https://github.com/de-dh/WeAct-2.9-EPD-Esp32-MPY) - Nanogui setup for a cheap 2.9' E-Paper display.
+
+
+LVGL / Micropython Links:
 
 - [Kdschlosser's Micropython Bindings](https://github.com/lvgl-micropython/lvgl_micropython): Micropython bindings from kdschlosser make building the firmware easier and support additional displays.
 - [baxterbuilds](https://baxterbuilds.com/): Some very useful LVGL9 Micropython examples.

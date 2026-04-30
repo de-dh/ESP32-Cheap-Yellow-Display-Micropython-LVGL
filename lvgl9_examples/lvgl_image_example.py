@@ -1,6 +1,8 @@
 import lvgl as lv
 import lv_config
 
+# Source: https://github.com/lvgl-micropython/lvgl_micropython/discussions/317#discussioncomment-13230539
+
 def get_image_data(filename):
     with open(filename, 'rb') as f:
         imgdata = f.read()

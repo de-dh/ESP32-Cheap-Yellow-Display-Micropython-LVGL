@@ -1,8 +1,6 @@
 > [!WARNING]
 > You must do hard-resets of your CYD after code changes. Soft resets may throw this error: `can't convert to module to int`.
 >
-> The demos / example programs from the different folders require individual firmwares. They may not be mixed up.
-> 
 > **>>>>> Please read the complete readme file and check the closed issues before asking for help / opening any new issues. <<<<<**
 
 

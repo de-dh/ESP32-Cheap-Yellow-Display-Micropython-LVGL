@@ -2,7 +2,7 @@
 
 ## Setup
 
-The folder contains the complete nanogui setup. Only the neccessary display drivers were included.
+The `/mpy_nanogui` folder contains the complete setup for [Peter Hinch's nanogui](https://github.com/peterhinch/micropython-nano-gui). Only the neccessary display drivers are included.
 The screenshot shows how the displayed screen should look after a successfull setup.
 
 <img  src="mpy_nanogui/snapshot_nanogui.png" width="240" height="auto" />

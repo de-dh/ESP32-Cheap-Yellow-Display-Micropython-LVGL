@@ -1,8 +1,12 @@
+> [!IMPORTANT]
+> This program occupies a lot of RAM and it requires additional PSRAM on the CYD (PSRAM Mod).
+> 
+> The program will most likely crash on the unmodified CYD without addidtional PSRAM.
 
 # LVGL RGB565 Screenshot Export and PNG Converter
 
 
-This project provides a small set of Python utilities for exporting screenshots from an LVGL display like the CYD or the [JC3248W535 aka Cheap Black Display](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main) and converting them into standard PNG images.
+This project provides a small set of Python utilities for exporting screenshots from an LVGL display like the CYD with PSRAM Mod or the [JC3248W535 aka Cheap Black Display](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main) and converting them into standard PNG images.
 
 The LVGL screenshot is saved as a raw RGB565 buffer together with a metadata file. The converter then reads both files and creates a PNG image.
 

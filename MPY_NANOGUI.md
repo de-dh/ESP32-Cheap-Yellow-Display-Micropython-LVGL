@@ -16,3 +16,8 @@ The screenshot shows how the displayed screen should look after a successfull se
 default_mod = 4 # orientation: 0 - 7
 default_bgr = True # rgb / bgr mode
 ```
+
+## font_to_py_multiconverter
+
+The `font_to_py_multiconverter` is used to convert a `*.ttf` file to `*.py` font files which can be used by nanogui's (C)Writer module.
+Simply drag-and-drop a *.ttf file onto `multi_converter.bat` and a new subfolder will be created containing compiled `*.py` font files in multiple sizes.

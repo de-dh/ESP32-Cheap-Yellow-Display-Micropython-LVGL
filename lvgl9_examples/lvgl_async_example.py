@@ -4,6 +4,7 @@ import lv_utils
 import asyncio
 from machine import Pin, ADC
 
+# Source: https://github.com/lvgl-micropython/lvgl_micropython/discussions/384#discussioncomment-13461609
 
 # ===== Initialize Hardware ===== #
 ldr = ADC(Pin(34), atten=ADC.ATTN_0DB)

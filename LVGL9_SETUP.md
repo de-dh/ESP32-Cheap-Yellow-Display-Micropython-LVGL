@@ -124,13 +124,26 @@ A lot of the included functions are usually unused so you can just copy the UI p
 ## Adding PSRAM
 
 An external PSRAM chip can be attached to the CYD as described here: [SPIRAM (PSRAM) Mod](https://github.com/hexeguitar/ESP32_TFT_PIO#adding-psram)
-
 This may be beneficial for LVGL GUI programs with multiple complex screens.
 
 The 4 MB PSRAM chips can be purchased via ALiExpress (10 pcs for ~ 15€).
 
+Desoldering tweezers are or a hot air gun can be used to remove the SMD LED prior to attaching the PSRAM.
+I also put some flux on the soldering joints before desoldering. 
+I used a fine soldering iron tip and some additional flux to solder the PSRAM chip and the additional SMD LED + the wires.
+
+Be careful to not overheat the PCB since this can cause visible distortion of the TFT screen
 The following figures show a single PSRAM chip and the backside of the CYD with attached PSRAM and a single SMD LED.
 
-<img src="img/ESP32_PSRAM.jpg" />
+One of the [SPIRAM-enabled firmwares](#installing-the-precompiled-firmwares) must be used to utilize the PSRAM.
+Run 
+```python
+import gc
+
+print(gc.mem_free())
+```
+to verify PSRAM. It should output a value of ~ 4 MB.
+
+<img src="img/ESP32_PSRAM.jpg" width="100"/>
 <img src="img/CYD_PSRAM.jpg" width="250" height="auto" />
 <img src="img/CYD_PSRAM_detail.jpg" width="250" height="auto" />

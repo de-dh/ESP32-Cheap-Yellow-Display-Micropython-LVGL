@@ -37,6 +37,8 @@ An integrated Esp32S3 display module with more power is the [JC3248W535 aka Chea
 The following links provide detailed instructions on how to setup the CYD.
 
 - [LVGL9 Setup Instructions](LVGL9_SETUP.md)
+  - [LVGL9 Examples](LVGL9_EXAMPLES.md)
+  - [LVGL9 Tips](LVGL9_TIPS.md)
 - [MPY Nanogui Setup Inctructions](MPY_NANOGUI.md)
 - [MPY Only Setup Inctructions](MPY_ONLY.md)
 

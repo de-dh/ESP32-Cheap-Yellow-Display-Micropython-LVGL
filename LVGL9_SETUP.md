@@ -120,4 +120,17 @@ A file named `ui.py` will be created in the export directory which contains the 
 A lot of the included functions are usually unused so you can just copy the UI part into your own programs.
 
 <img src="img/square_line_settings.png" width="500" height="auto" />
-    
+
+## Adding PSRAM
+
+An external PSRAM chip can be attached to the CYD as described here: [SPIRAM (PSRAM) Mod](https://github.com/hexeguitar/ESP32_TFT_PIO#adding-psram)
+
+This may be beneficial for LVGL GUI programs with multiple complex screens.
+
+The 4 MB PSRAM chips can be purchased via ALiExpress (10 pcs for ~ 15€).
+
+The following figures show a single PSRAM chip and the backside of the CYD with attached PSRAM and a single SMD LED.
+
+<img src="img/ESP32_PSRAM.jpg" />
+<img src="img/CYD_PSRAM.jpg" width="250" height="auto" />
+<img src="img/CYD_PSRAM_detail.jpg" width="250" height="auto" />

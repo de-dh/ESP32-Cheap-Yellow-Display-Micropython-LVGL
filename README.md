@@ -1,7 +1,7 @@
 > [!WARNING]
-> You must do hard-resets of your CYD after code changes. Soft resets may throw this error: `can't convert to module to int`.
+> You must do hard-resets of your CYD after running a program. Soft resets may throw this error: `can't convert to module to int`.
 >
-> **>>>>> Please read the complete readme file and check the closed issues before asking for help / opening any new issues. <<<<<**
+> **>>>>> Please read the complete readme files and check the closed issues before asking for help or opening any new issues. <<<<<**
 
 
 ## Cheap Yellow Display

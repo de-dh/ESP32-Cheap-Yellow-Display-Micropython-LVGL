@@ -3,7 +3,9 @@
 
 
 This project provides a small set of Python utilities for exporting screenshots from an LVGL display like the CYD or the [JC3248W535 aka Cheap Black Display](https://github.com/de-dh/ESP32-JC3248W535-Micropython-LVGL/tree/main) and converting them into standard PNG images.
+
 The LVGL screenshot is saved as a raw RGB565 buffer together with a metadata file. The converter then reads both files and creates a PNG image.
+
 A Windows drag-and-drop batch file is also included to make the conversion process easier without using the command line manually.
 
 ![Screenshot of a CYD LVGL Screen showing a custom keyboard layout.](lvgl9_examples/example_screenshots/screen_kb_test.png)
@@ -24,6 +26,8 @@ screen.png
 ```
 
 ## Files
+
+The files are located in the [`/lvgl9_screenshot`](/lvgl9_screenshot) folder.
 
 ### `lvgl9_screenshot.py`
 
@@ -203,7 +207,7 @@ The file `raw_to_png_dragdrop.bat` allows conversion by drag and drop.
 Place the batch file in the same folder as `raw_to_png.py`:
 
 ```text
-project-folder/
+lvgl9_examples/
 ├─ raw_to_png.py
 ├─ raw_to_png_dragdrop.bat
 ├─ screen.raw

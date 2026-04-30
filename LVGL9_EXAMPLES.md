@@ -19,7 +19,7 @@ You don't need to upload the `/lvgl9_examples/example_screenshots` folder since 
 | File in `/lvgl9_examples` | Description |
 |---|---|
 | lvgl_async_example.py | Using asyncio to update the screen. |
-| lvgl_custom_font_example.py | Loading a custom font compiled by the LVGL font converter. Font  license: [SIL](#licenses). |
+| lvgl_custom_font_example.py | Loading a custom font compiled by the LVGL font converter. [Described here](LVGL9_TIPS.md#font-converter-for-custom-fonts). Font license: [SIL](#licenses). |
 | lvgl_custom_icon_font_example.py | Loading a custom icon font. [Described here](LVGL9_TIPS.md#icon-fonts). |
 | lvgl_flex_example.py | Flexbox layout with fixed items of fixed and variable width demonstrating flex-grow.|
 | lvgl_icons_example.py | Using the font-awesome icons included in the LVGL build by default. |

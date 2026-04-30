@@ -86,6 +86,22 @@ E.g. if the red square is rendered in blue then BGR mode must be used by setting
 The calibration data is stored in the non volatile storage (NVS) of the Esp32 so calibration has to be performed only once.
 The program detects automatically if calibration data is available.
 
+**Potrait Mode Setup**
+
+Switch `_DISPLAY_WIDTH` and `_DISPLAY_HEIGHT` for portrait mode as shown below and determine the correct rotation setting as described above in **Step 2**.
+
+```python
+# ============== Customize settings ============== #
+# The following values need to be customized.
+
+# Switch width and height for portrait mode.
+_DISPLAY_WIDTH = const(240)
+_DISPLAY_HEIGHT = const(320)
+# Try different values from rotation table.
+_DISPLAY_ROT = const(0x0)
+```
+
+
 ## Using the Example Programs
 
 Open the file `/lvgl9_examples/lib/lv_config.py` and copy the correct display settings from `/lvgl9_firmwares/color_test.py` to it.

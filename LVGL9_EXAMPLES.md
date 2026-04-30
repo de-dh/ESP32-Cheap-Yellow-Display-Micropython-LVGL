@@ -1,3 +1,6 @@
+> [!WARNING]
+> You must do hard-resets of your CYD after running a program. Soft resets may throw this error: `can't convert to module to int`.
+
 # LVGL9.4 Example Programs
 
 ## Setup

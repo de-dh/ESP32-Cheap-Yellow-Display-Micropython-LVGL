@@ -41,6 +41,9 @@ The following links provide detailed instructions on how to setup the CYD.
 - [MPY Nanogui Setup Inctructions](MPY_NANOGUI.md) - Setup instructions for [Peter Hinch's nanogui](https://github.com/peterhinch/micropython-nano-gui).
 - [MPY Only Setup Inctructions](MPY_ONLY.md) - Setup using micropython only.
 
+## Contributing
+
+Everyone is welcome to share example programs and tips.
 
 ## Links
 

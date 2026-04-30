@@ -68,7 +68,13 @@ It's clearly readable on the CYD with medium or semi-bold font-weight.
 
 <img src="img/font_converter_settings.jpg" width="250" height="auto" />
 
-## Icon fonts
+## Icon Fonts
+
+The figures below show the settings used to convert the custom icon font used in the [example program](lvgl9_examples/lvgl_custom_icon_font_example.py).
+Icons were created with InkScape. The icon font was created using [IcoMoon](https://icomoon.io/app/#/select) and compiled with the [font converter](https://lvgl.io/tools/fontconverter). The icons `moon.svg` and `star.svg` are included in the `/img` folder so you can try creating the font yourself.
+
+<img src="img/font_converter_custom_icons2.png" width="250" height="auto" />
+<img src="img/font_converter_custom_icons1.png" width="250" height="auto" />
 
 The `utf8Bytes` function is useful for displaying icons from icon fonts.
 It converts the character specific Unicode which is used on font collection websites to a six digit UTF-8 code [required by LVGL](https://docs.lvgl.io/8.3/overview/font.html#add-new-symbols).

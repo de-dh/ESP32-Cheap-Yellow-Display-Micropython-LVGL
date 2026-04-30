@@ -107,3 +107,17 @@ _DISPLAY_ROT = const(0x0)
 Open the file `/lvgl9_examples/lib/lv_config.py` and copy the correct display settings from `/lvgl9_firmwares/color_test.py` to it.
 Upload the `/lvgl9_examples` folder to your board and run the example programms. 
 You don't need to upload the `/lvgl9_examples/example_screenshots` folder since the screenshots are only used in the documentation.
+
+## Using SquareLine Studio for GUI Design
+
+_SquareLine Studio 1.6.0_ can be used to create screens and some widgets easily.
+The required settings are shown in the screenshot below.
+
+Click _Export --> Export UI Files_ in the top menu of SL Studio to export the *.py source files.
+
+A file named `ui.py` will be created in the export directory which contains the UI code.
+
+A lot of the included functions are usually unused so you can just copy the UI part into your own programs.
+
+<img src="img/square_line_settings.png" width="500" height="auto" />
+    
